@@ -1,0 +1,153 @@
+body {
+  /*background-color: #ffba41;*/
+  background-image: url(https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5f9e7b01025c2911f850db34fae63a8a&auto=format&fit=crop&w=1350&q=80);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  line-height: 1.1;
+  color: black;
+  font-family: 'Slabo 27px', serif;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+section.header {
+  position: fixed;
+  width: 100%;
+  opacity: 1;
+  height: 100px;
+}
+
+section.header h2 {
+  text-align: center;
+  width: 300px;
+  color: #f4b942;
+  float: left;
+  padding-left: 50px;
+  letter-spacing: 4px;
+  background-color: rgba(120, 120, 120, 0.1);
+}
+
+.header img {
+  width: 150px;
+  opacity: 1;
+  border-radius: 50%;
+  float: right;
+  padding: 20px 50px 0 0;
+}
+
+section.hover {
+  margin: 0 auto;
+  color: white;
+  width: 40%;
+  height: 20%;
+  color: black;
+  background-color: #ffe0db;
+  border-radius: 2%;
+  opacity: 0;
+}
+
+div.hamburger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url(https://previews.123rf.com/images/ylivdesign/ylivdesign1703/ylivdesign170300958/73224690-hamburger-isometric-icon-3d-on-a-transparent-background-vector-illustration.jpg);
+  background-position: center;
+  z-index: 2;
+  opacity: 1;
+
+}
+
+div.slideout {
+  position: fixed;
+  top: 0;
+  left: -450px;
+  width: 450px;
+  height: 100%;
+  background-color: #ffda89;
+  transition: left 0.5s;
+  opacity: 1;
+  font-size: 24px;
+  overflow: scroll;
+}
+
+div.slideout p {
+  top: 50%;
+  margin: 5px;
+  margin-top: 20px;
+  text-align: right;
+  padding: 20px;
+}
+
+div.hamburger:hover div.slideout {
+  left: 0;
+}
+
+div.about {
+  top: 300px;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+div.title :hover{
+ opacity: 1;
+}
+
+footer {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  color: white;
+  padding: 0 10px 10px 0;
+}
+
+footer img {
+  width: 30px;
+  padding: 10px;
+  display: inline-block;
+  z-index: 1
+}
+
+@media (max-width: 1000px) {
+
+footer img {
+  width: 18px
+}
+
+section.header h2 {
+  font-size: 20px;
+}
+.media {
+
+}
+.header img {
+  width: 80px;
+  padding: 5px 5px 0 0;
+}
+}
+
+@media (max-width: 600px) {
+
+  div.hamburger {
+ display: none;
+}
+
+
+@media (max-height: 1000px) {
+  div.slideout {
+    font-size: 13px;
+    overflow: scroll;
+  }
+
+  div.slideout p {
+    top: 0;
+  font-size: 12px;
+  padding: 0;
+}
+}
